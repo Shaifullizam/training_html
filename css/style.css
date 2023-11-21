@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Poppins", sans-serif; 
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.container-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-item {
+        flex-direction: column;
+    }
+}
+
+.container-item-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.container-item-grid .item {
+    width: auto;
+}
+
+.container-item .item {
+    width: 200px;
+}
+
+.bg-light {
+    background: #f2f2f2;
+}
+.bg-primary {
+    background: tomato;
+}
+
+@media only screen and (min-width: 600px) {
+    .bg-primary {
+        background: yellow;
+    }
+}
+
+/* this is banner */
+.box-top {
+    background-color: tomato;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0 0;
+    width: 300px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.banner-top {
+    background: url("../img/mountain.jpg") no-repeat #ccc center center;
+    background-size: cover;
+    height: 400px;
+}
+
+.box-info {
+    width: 300px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.box-info h4 {
+    text-transform: uppercase;
+    color: purple;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 6px;
+    font-style: italic;
+}
+
+.box-info .read-more {
+    color: tomato;
+    background: #eee;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.box-info .read-more:hover,
+.box-info .read-more:focus {
+    color: #fff;
+    background: tomato;
+}
+
+
+.box-info .body {
+    line-height: 1.3;
+}
+
+.list-user {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.list-user li {
+    list-style: none;
+    margin: 5px 10px;
+    display: inline;
+    background: green;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.table-default {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table-default th{
+    font-weight: bold;
+    background: #f2f2f2;
+}
+
+.table-default td{
+    background: #ccc;
+}
+
+.table-default th, .table-default td {
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+.bx {
+    color: red;
+    font-size: 20px;
+}
+
+
+input[type=text], textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: 0;
+}
+
+input[type=text]:focus {
+    border: 1px solid red;
+}
+
+input[type=text].input-primary {
+    border: 1px solid blue;
+}
+
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.btn-primary {
+    background: tomato;
+    color: #fff;
+}
+
+.btn-error {
+    background: red;
+    color: #fff;
+}
